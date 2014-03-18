@@ -1,0 +1,36 @@
+// mayor de 3 numeros.cpp : Defines the entry point for the console application.
+//autor: Javier Cuellar 
+//Fecha: 18/03/2014
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main () {
+
+float a,b,c ;
+
+cout<<"            EL MAYOR DE 3 NUMEROS \n\n";
+cout<<"Ingrese a:";
+cin>>a;
+cout<<"Ingrese b:";
+cin>>b;
+cout<<"Ingrese c:";
+cin>>c;
+
+if(a>b)
+  if(a>c)
+	  cout<<"EL MAYOR ES:"<<a;
+  else
+	  cout<<"EL MEYOR ES:"<<c;
+else
+if (b>c)
+cout<<"EL MAYOR ES:"<<b;
+else 
+cout<<"EL MAYOR ES:"<<c;
+
+
+getch();
+
+}

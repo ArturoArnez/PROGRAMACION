@@ -1,31 +1,32 @@
 //2NUMEROSPARES.cpp : Defines the entry point for the console application.
-//Nombre:ARTURO ARNEZ LOPEZ
-//Fecha:25/03/2014
+//NOMBRE: ARTURO ARNEZ LOPEZ
+//FECHA: 25/03/2014
 
 #include "stdafx.h"
 #include <iostream>
+#include "math.h"
 #include "conio.h"
 
-    using namespace std; 
-    void main()
+using namespace std;
+void main()
 
 {
-	int num1 ,num2,res;
-	cout<<"DADO 2 NUMEROS CONSIDERAR SI LOS 2 SON PARES SE SUMEN CASO CONTRARIO SE MULTIPLIQUEN \n\n";
-	cout<<"introduzca num1:";
-		cin>>num1;
-	cout<<"introduzca num2:";
-		cin>>num2;
-if ((num1%2==0) && (num2%2==0))
-        res=num1+num2;
-        
-else
-       res=num1*num2;
-    
+	int A,B,res;
+	cout<<"DADO 2 NUMEROS,SI LOS 2 SON PARES,SE SUMEN CASO CONTRARIO SE MULTIPLIQUEN \n\n";
+	cout<<"INTRODUCE UN NUMERO ";
+	cin>>A;
+	cout<<"INTRODUCE UN NUMERO ";
+    cin>>B;
+	cout<<"EL RESULTADO ES ";
+if((A%2==0)
 
-       cout<<res;
+&&(B%2==0))
+
+     res=A+B;
+else
+
+        res=A*B;
+cout<<res;
 
 getch();
-	
 }
-

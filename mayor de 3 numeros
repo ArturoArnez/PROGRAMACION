@@ -1,5 +1,5 @@
 // mayor de 3 numeros.cpp : Defines the entry point for the console application.
-//autor: Javier Cuellar 
+//autor: ARTURO ARNEZ
 //Fecha: 18/03/2014
 #include "stdafx.h"
 #include <iostream>

@@ -1,0 +1,27 @@
+//SUMAENTEROSPARES.cpp : Defines the entry point for the console application.
+//NOMBRE:ARTURO ARNEZ LOPEZ
+//FECHA: 1-4-2014
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+
+using namespace std;
+
+void main()
+
+{
+  int suma,i,N;
+  cout<<"SUMA DE LOS ENTEROS PARES \n\n";
+
+  cout<<"INGRESAR EL VALOR DE N:";
+  cin>> N;
+  suma=0;
+  for(i=2;i<=N;i+=2)
+	  suma=suma+i;
+  cout<<"La suma de los "<< N <<" pares es:" << suma;
+
+  getch();
+
+ }

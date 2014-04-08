@@ -1,0 +1,67 @@
+// nota.cpp : Defines the entry point for the console application.
+//NOMBRE: ARTURO ARNEZ LOPEZ
+//FECHA: 8-04-2014
+
+#include "stdafx.h"
+#include "math.h"
+#include <iostream>
+#include "conio.h"
+
+using namespace std;
+
+void main()
+
+{
+  float P1,P2,P3,PP,FINAL,NF;
+  
+  
+  do
+  {
+	  cout<<"INTRODUZCA PARCIAL 1: ";
+      cin>>P1;
+
+  }
+  while((P1>100 || P1<0)&&(P1!=-99));  
+  while(P1!=-99)
+  {
+
+    do
+    {
+		cout<<"INTRODUZCA PARCIAL 2: ";
+    cin>>P2;
+
+    while(P2>100 || P2<0);
+  
+    do 
+    {
+		cout<<"INTRODUZCA PARCIAL 3: ";
+    cin>>P3;
+    }
+    while(P3>100 || P3<0);
+    
+    cout<<"INTRODUZCA PRACTICO: ";
+    cin>>PP;
+    }
+    while(PP>100 || PP<0);
+    do
+    {
+	   cout<<"INTRODUCIR FINAL: ";
+       cin>>FINAL;
+    }
+    while(FINAL>100 || FINAL<0);
+
+   NF=((P1+P2+P3)/3+PP * 0.2+FINAL *0.4);
+   cout<<"NOTA FINAL= "<<NF;
+   do
+   {
+    
+	   cout<<"INGRESE P1: ";
+	   cin>>P1;
+   }
+
+   while((P1>100 || P1<0)&&(P1!=-99)); 
+
+   }
+   getch();
+
+}

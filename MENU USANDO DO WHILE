@@ -1,0 +1,50 @@
+//MENUDOWHILE.cpp : Defines the entry point for the console application.
+//NOMBRE:ARTURO ARNEZ LOPEZ,JAVIER CUELLAR
+//FECHA:15-04-2014
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+int main ()
+
+{
+   int SUMA,RESTA,DIVISION,MULTIPLICACION,A,B,N;
+
+   do
+
+{  cout<<"A: ";
+   cin>>A;
+   cout<<"B: ";
+   cin>>B;
+
+   cout<<"MENU PRINCIPAL\n\n";
+   cout<<"1.SUMA\n\n";
+   cout<<"2.RESTA\n\n";
+   cout<<"3.MULTIPLICACION \n\n";
+   cout<<"4.DIVISION \n\n";
+   cout<<"0.SALIR \n\n";
+
+   cin>>N;
+
+   if(N==4)
+	{DIVISION=A/B;
+    cout<<"DIVISION ES:"<<DIVISION;}
+
+   if(N==1)
+    {SUMA=A+B;
+    cout<<"LA SUMA ES:"<<SUMA;}
+
+   if(N==2)
+    {RESTA=A-B;
+    cout<<"LA RESTA ES:"<<RESTA;}
+
+   if(N==3)
+	{MULTIPLICACION=A*B;
+    cout<<"LA MULTIPLICACION ES:"<<MULTIPLICACION;}
+}
+while(N!=0);
+}
+

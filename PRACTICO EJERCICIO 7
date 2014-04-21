@@ -1,0 +1,21 @@
+//EJERCICIO7.cpp : Defines the entry point for the console application.
+//NOMBRE:ARTURO ARNEZ LOPEZ
+//CALCULAR FACTORIAL DE UN NUMERO ENTERO N
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include"math.h"
+using namespace std;
+void main()
+{
+int N,PRODUCTO,I;
+
+cout<<"INGRESE N";
+cin>>N;
+PRODUCTO=1;
+for(I=1;I<N;I++)
+PRODUCTO=(PRODUCTO*I);
+cout<<"EL FACTORIAL ES: "<<PRODUCTO;
+getch();
+}

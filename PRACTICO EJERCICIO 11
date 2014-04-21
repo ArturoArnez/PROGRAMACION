@@ -1,5 +1,7 @@
 //MCD.cpp : Defines the entry point for the console application.
 //NOMBRE: ARTURO ARNEZ LOPEZ
+//HALLAR EL MAXIMO COMUN DIVISOR 
+
 
 #include "stdafx.h"
 #include <iostream>

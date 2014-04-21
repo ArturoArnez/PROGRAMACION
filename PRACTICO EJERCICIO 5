@@ -1,0 +1,20 @@
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{
+int Producto,N,i;
+cout<< "Ingrese el valor de N: ";
+cin>> N;
+Producto=1;
+for (i=1;i<=N;i++)
+Producto = Producto * i;
+
+cout<< Producto;
+getch();
+
+}

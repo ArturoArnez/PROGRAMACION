@@ -1,0 +1,43 @@
+//EJERCICIO12.cpp : Defines the entry point for the console application.
+//NOMBRE;ARTURO ARNEZ LOPEZ
+//CALCULAR EL MCM DE DOS NUMEROS ENTEROS
+
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{
+int a,b,MCD,mcm,cont,menor;
+cout<< "Ingrese el valor de A: ";
+    cin>> a;
+cout<< "Ingrese el valor de B: ";
+cin>> b;
+
+if(a<b)
+menor = a;
+else
+menor = b;
+
+MCD = 1;
+mcm = 0;
+cont = 2;
+while (cont <= menor)
+{
+if((a % cont==0)&&(b % cont==0))
+{
+a = a/cont;
+b = b/cont;
+menor = menor/cont;
+mcm = (a*b)/MCD;
+mcm = mcm*cont;
+cont = cont-1;
+}
+cont = cont+1;
+
+}
+cout<< mcm;
+getch();
+}

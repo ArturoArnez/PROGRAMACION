@@ -1,0 +1,22 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{
+int Suma,N,x;
+float i;
+cout<< "Ingrese el valor de N: ";
+cin>> N;
+cout<< "Ingrese el valor de x: ";
+cin>> x;
+Suma = 0 ;
+for (i=1;i<=N;i++)
+Suma = Suma+ pow(x,i);
+
+cout<< Suma;
+getch();
+
+}

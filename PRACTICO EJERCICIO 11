@@ -1,46 +1,44 @@
-//MCD.cpp : Defines the entry point for the console application.
-//NOMBRE: ARTURO ARNEZ LOPEZ
-//HALLAR EL MAXIMO COMUN DIVISOR 
-
+// encontrar el mcd.cpp : Defines the entry point for the console application
+// NOMBRES: JAVIER CUELLAR , ARTURO ARNEZ
 
 #include "stdafx.h"
 #include <iostream>
 #include "conio.h"
-#include "stdlib.h"
 
 using namespace std;
+void main ()
+{
+int a,b,c,mcd,cont,menor;
+cout<<"ingresar a :";
+cin>>a;
+cout<<"ingresar b :";
+cin>>b;
+cout<<"ingresar c :";
+cin>>c;
 
-void main()
-{
-  int ,a,b,c,menor,MCD,cont;
-  cout<< "INGRESE A: ";
-  cin>> a;
-  cout<< "INGRESE B: ";
-  cin>> b;
-  cout<< "INGRESE C: ";
-  cin>> c;
-  if((a<b)&&(a<c))
-menor = a;
-  else
-if((b<a)&&(b<c))
-menor = b;
+if(a<b&&a<c)
+   menor=a;
 else
-menor = c;
-  MCD = 1;
-  cont = 2;
- while (cont <= menor)
- {
-if((a % cont==0)&&(b % cont==0)&&(c & cont==0))
+   if(b<a&&b<c)
+      menor=b;
+   else
+      menor=c;
+mcd=1;
+cont=2;
+while(cont<=menor)
 {
-a = a/cont;
-b = b/cont;
-c = c/cont;
-menor = menor/cont;
-MCD = MCD*cont;
-cont = cont-1;
+  if((a%cont==0)&&(b%cont==0)&&(c%cont==0))
+  {
+     a=a/cont;
+     b=b/cont;
+     c=c/cont;
+     menor=menor/cont;
+     mcd=mcd*cont;
+     cont=cont-1;
+  }
+  cont=cont+1;
 }
- cont = cont+1;
- }
- cout<< MCD;
- getch();
+       
+cout<<mcd;
+getch();
 }

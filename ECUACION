@@ -1,0 +1,39 @@
+// ECUACION.cpp : Defines the entry point for the console application.
+//ARTURO ARNEZ LOPEZ
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+
+using namespace std;
+void main () 
+{
+   float A,B,C,X1,X2,X,temp;
+
+   cout<<"Calcular la de una ecuación cuadrática";
+   cout<<"INGRESE A: ";
+   cin>>A;
+
+   cout<<"INGRESE B: ";
+   cin>>B;
+
+   cout<<"INGRESE C: ";
+   cin>>C;
+  
+   if(temp>0)
+   {
+      X1=(-B+ sqrt(B*B - 4*A*C))/(2*A);
+
+      X2=(-B- sqrt(B*B - 4*A*C))/(2*A);
+   cout<<X1;
+   cout<<X2;
+
+   }
+   else
+      if(temp=0)
+X=(-B/(2*A));
+cout<<X;
+
+getch();
+}

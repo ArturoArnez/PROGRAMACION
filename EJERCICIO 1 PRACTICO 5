@@ -1,0 +1,33 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{
+   int PESO;
+
+   cout<<"SERVICIO DE CORREO";
+   cout<<"INGRESE PESO";
+   cin>>PESO;
+
+   if((PESO>=0) && (PESO<=50))
+   cout<<"EL COSTO ES 1.50 BS";
+   else
+       if ( (PESO>=50) && (PESO<=100) )
+        cout<<"EL COSTO ES 4 BS";
+   if((PESO>=100) && (PESO<=200))
+      cout<<"EL COSTO ES 6 BS";
+   else
+        if((PESO>200) && (PESO<=350))
+      cout<<"EL COSTO ES DE 10.50 BS";
+   if((PESO>350) && (PESO<=500))
+      cout<<"EL COSTO ES DE 15 BS";
+   else
+        if(PESO>500)
+        cout<<"NO PUEDE ENVIAR COMO CARTA";
+
+
+getch();
+}

@@ -1,0 +1,28 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{
+   int OPCION,H,A,X;
+
+   cout<<"MENU PRINCIPAL";
+   cout<<"1.AREA CUADRADO";
+   cout<<"2.AREA CIRCULO";
+   cout<<"3.AREA TRIANGULO";
+   cin>>OPCION;
+   cin>>X;
+   if(OPCION==1) 
+    {A=X*X;}
+
+    if(OPCION==2) 
+     
+	{A=3,1416*X*X;}
+    if(OPCION==3)
+    A=(X*X)/2
+   cout<<A;
+getch();
+
+}

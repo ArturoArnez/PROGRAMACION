@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+#include "conio.h"
+#include "math.h"
+
+using namespace std;
+void main()
+{
+int MES,DIA,VERANO,OTOÑO,PRIMAVERA,INVIERNO;
+cout<<"DETERMINAR LA ESTACION";
+
+cout<<"INGRESE EL MES ";
+cin>>MES;
+cout<<"INGRESE EL DIA ";
+cin>>DIA;
+
+if((MES>=9)&& (DIA>=21))
+cout<<PRIMAVERA;
+
+else if((MES>=12) && (DIA>=21))
+cout<<VERANO;
+
+else if((MES>=3) && (DIA>=21))
+cout<<OTOÑO;
+
+else if((MES>=6) && (DIA>=21))
+cout<<INVIERNO;
+
+
+getch();
+}

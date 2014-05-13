@@ -1,0 +1,34 @@
+// EJERCICIO 3.cpp : Defines the entry point for the console application.
+//EJERCICIO OLIMPIADAS
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+#include "math.h"
+
+using namespace std;
+
+int valor(int X);
+
+void main()
+{ int X,V;
+cout<<"INGRESE EL VALOR BINARIO: ";
+  cin>>X;
+  V=valor(X);
+
+cout<<"EL NUMERO ES: "<<V;
+getch();
+}
+
+int valor(int X)
+{
+ int i=0,suma=0,dig;
+ while (X>0)
+	{
+	  dig=X%10;
+	  X=X/10;
+	  suma=suma+pow(2.0,i)*dig;
+	  i=i+1;
+	}
+	return suma;
+}

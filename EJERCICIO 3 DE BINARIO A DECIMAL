@@ -8,10 +8,10 @@
 
 using namespace std;
 
-int valor(int X);
+int valor(int X); //LO MISMO
 
 void main()
-{ int X,V;
+{ int X,V; //DECLARAR VARIABLES A USAR EN ESTA PARTE
 cout<<"INGRESE EL VALOR BINARIO: ";
   cin>>X;
   V=valor(X);
@@ -20,9 +20,9 @@ cout<<"EL NUMERO ES: "<<V;
 getch();
 }
 
-int valor(int X)
+int valor(int X) //LO MISMO
 {
- int i=0,suma=0,dig;
+ int i=0,suma=0,dig; //DECLARAR VARIABLES QUE USO EN ESTA PARTE
  while (X>0)
 	{
 	  dig=X%10;

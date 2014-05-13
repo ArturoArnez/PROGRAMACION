@@ -1,0 +1,50 @@
+// ejercicio 1.cpp : Defines the entry point for the console application.
+// ARTURO ARNEZ LOPEZ
+// 13/05/2014
+
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+
+int factorial(int numero);
+int potencia(float base,int exponente);
+
+int main ()
+{
+	int x,n,i;
+	float s;
+
+	cout<<"ingresex:";
+	cin>>x;
+	cout<<"ingrese n:";
+	cin>>n;
+	s=0;
+	for(int i=1;i<=n;i++)
+		s=s+potencia(x,i)/factorial(i);
+	cout<<"          el resultado es:"<<s;
+
+	getch();
+}
+
+int factorial(int numero)
+{
+	int p,i;
+	p=1;
+	for(i=2;i<=numero;i++)
+		p=p*i;
+	return p;
+
+}
+
+int potencia(float base,int exponente)
+{
+	int p,i;
+	p=1;
+	for(i=1;i<=exponente;i++)
+		p=p*base;
+	return p;
+
+}
+   

@@ -1,0 +1,31 @@
+#include "stdafx.h"
+#include <iostream>
+#include <math.h>
+#include"conio.h"
+using namespace std;
+
+int expo(int base, int e);
+int main()
+{
+   int base, exponente,pot;
+  
+      cout<<"Escriba el numero que quiere potenciar: ";
+      cin>>base;
+      cout<<"Escriba el numero al que lo quiere elevar: ";
+      cin>>exponente;
+      pot=expo(base,exponente);
+	  cout<<pot;
+	  
+ 
+   getch();
+}
+
+int expo(int base, int e)
+{
+   int i,pot=1;
+   
+   for(i=1;i<=e;i++)
+      pot*= base;
+   return pot;           
+ 
+} 

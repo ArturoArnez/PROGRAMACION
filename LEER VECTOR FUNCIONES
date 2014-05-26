@@ -1,0 +1,19 @@
+#include "stdafx.h"
+#include "conio.h"
+#include <iostream>
+
+using namespace std;
+void leervector (int a[],int tam);
+int main()
+{ 
+	int a[],tam,leer;
+	cin>>tam;
+	cin>>a[];
+	leer=leervector(a[],tam);
+    cout<<leer;
+	return 0;
+} 
+  void leervector (int a[],int tam)
+  {  int
+	  for(i=0;i<5;i++)
+  leer=

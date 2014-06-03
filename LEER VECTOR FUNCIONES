@@ -11,9 +11,5 @@ int main()
 	cin>>a[];
 	leer=leervector(a[],tam);
     cout<<leer;
-	return 0;
+ getch();
 } 
-  void leervector (int a[],int tam)
-  {  int
-	  for(i=0;i<5;i++)
-  leer=
